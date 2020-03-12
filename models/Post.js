@@ -16,7 +16,7 @@ const PostSchema = new Schema({
         type: String
     },
     avatar: {
-        String
+        type: String
     },
     likes: [
         {
@@ -40,7 +40,7 @@ const PostSchema = new Schema({
                 type: String
             },
             avatar: {
-                String
+                type: String
             },
             date: {
                 type: Date,
