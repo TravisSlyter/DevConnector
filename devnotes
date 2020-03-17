@@ -1,4 +1,9 @@
 Developer Notes:
 
+// prior to installing react
 to run our dev server:
 $npm run server
+
+// after installing react
+to run server and react server concurrently
+$npm run dev
