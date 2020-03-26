@@ -9,4 +9,4 @@ Dashboard.propTypes = {
 
 }
 
-export default Dashboard
+export default Dashboard;

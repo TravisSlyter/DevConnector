@@ -28,19 +28,20 @@ const App = () => {
 <Provider store={store}>
   <Router>
     <Fragment>
-      <Navbar />
+      <Navbar></Navbar>
       <Route exact path="/" component={ Landing } />
       <section className='container'>
         <Alert />
         <Switch>
-          <Route exact path='/Register' component={Register}/>
+          <Route exact path='/Register' component={Register} />
         <Route exact path='/Login' component={Login}/>
-        <PrivateRoute exact path='/Dashboard' component={Dashboard}/>
+        <PrivateRoute exact path='/dashboard' component={Dashboard}/>
         </Switch>
       </section>
     </Fragment>
   </Router>
 </Provider>
-)};
+);
+};
 
 export default App;
