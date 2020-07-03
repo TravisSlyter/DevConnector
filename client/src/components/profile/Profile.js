@@ -7,6 +7,7 @@ import ProfileTop from './ProfileTop'
 import ProfileAbout from './ProfileAbout'
 import ProfileExperience from './ProfileExperience.js'
 import ProfileEducation from './ProfileEducation.js'
+import ProfileGitHub from './ProfileGitHub.js'
 import { getProfileById } from '../../actions/profile'
 
 const Profile = ({ getProfileById, profile: { profile, loading }, auth, match }) => {
@@ -44,8 +45,13 @@ const Profile = ({ getProfileById, profile: { profile, loading }, auth, match })
                         {profile.education.map(education => (<ProfileEducation key={education._id} education={education}/> ))} 
                     </Fragment>
                     ) : (
-                      <h4>No education credentials</h4>)}
+                      <h4>No education credentials</h4>
+                    )}
                     </div>
+
+                    {profile.githubusername && (
+                        <ProfileGitHub username={profile.githubusername} />
+                    )}
                 </div>
             </Fragment>}
         </Fragment>
